@@ -84,9 +84,9 @@ public class ES extends AbstractVatFormalValidator {
 		// Personal number (NIF) (starting with numeric of Y or Z)
 		else if (vatNumber.matches(esexp[2])) {
 			String tempnumber = new String(vatNumber);
-			if (tempnumber.substring(0, 1) == "Y")
+			if ("Y".equals(tempnumber.substring(0, 1)))
 				tempnumber = tempnumber.replace("Y", "1");
-			if (tempnumber.substring(0, 1) == "Z")
+			if ("Z".equals(tempnumber.substring(0, 1)))
 				tempnumber = tempnumber.replace("Z", "2");
 			return tempnumber.charAt(8) == "TRWAGMYFPDXBNJZSQVHLCKE"
 					.charAt(Integer.parseInt(tempnumber.substring(0, 8)) % 23);
