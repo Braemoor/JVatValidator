@@ -123,6 +123,12 @@ public class VatValidationTest {
         logger.debug("Testing CHE OK");
 		assertTrue(VatValidator.validate("CHE", "105.835.768 MWST"));
 	}
+
+	@Test
+	public void testValidateCHE_OK2() {
+		logger.debug("Testing CHE OK");
+		assertTrue(VatValidator.validate("CHE", "105.835.768 TVA"));
+	}
 	
 	@Test
 	public void testValidateCY_OK() {
