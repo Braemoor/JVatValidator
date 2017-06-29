@@ -14,3 +14,6 @@ The first argument is the ISO-3166 country code, the second one is the value to 
 
 ## Acknowledgement
 The validation source is a Javascript file found <a href="http://www.braemoor.co.uk/software/vat.shtml">here</a>
+
+##Note
+The original source may have been updated since this version. See <a href="http://www.braemoor.co.uk/software/vatupdates.shtml">here</a> for the change list.
